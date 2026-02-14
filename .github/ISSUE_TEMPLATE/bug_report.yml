@@ -1,0 +1,107 @@
+name: Bug Report
+description: Report something that isn't working correctly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill out the sections below so we can reproduce and fix the issue.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iOS
+        - macOS
+        - Android
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS Version
+      placeholder: "e.g. iOS 18.2, macOS 15.3, Android 15"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: "e.g. iPhone 16 Pro, MacBook Air M2, Pixel 9"
+    validations:
+      required: false
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Krill Version
+      placeholder: "e.g. Beta 1"
+    validations:
+      required: true
+
+  - type: input
+    id: portainer-version
+    attributes:
+      label: Portainer Version
+      placeholder: "e.g. 2.21.0 CE, 2.21.0 BE"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: screen
+    attributes:
+      label: Screen / Area
+      options:
+        - Dashboard
+        - Environments
+        - Stacks
+        - Container Detail
+        - Container Logs
+        - Container Stats
+        - User Management
+        - Registries
+        - Settings
+        - Login / Authentication
+        - Server Switching
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      placeholder: Describe the bug clearly. What did you expect vs. what actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to '...'
+        2. Tap on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots or screen recordings to help explain the problem.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Any other details -- network setup, Portainer configuration, number of environments, etc.
+    validations:
+      required: false

@@ -1,0 +1,66 @@
+name: Portainer Compatibility Issue
+description: Report an issue with a specific Portainer version or configuration
+labels: ["compatibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template if Krill doesn't work correctly with your specific Portainer setup.
+
+  - type: input
+    id: portainer-version
+    attributes:
+      label: Portainer Version
+      placeholder: "e.g. 2.21.0 CE, 2.20.1 BE"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: portainer-edition
+    attributes:
+      label: Portainer Edition
+      options:
+        - Community Edition (CE)
+        - Business Edition (BE)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment-type
+    attributes:
+      label: Environment Type
+      options:
+        - Docker Standalone
+        - Docker Swarm
+        - Docker Agent
+        - Kubernetes
+        - Edge Agent
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iOS
+        - macOS
+        - Android
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What isn't working?
+      placeholder: Describe what fails or behaves unexpectedly with your Portainer setup.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional details
+      description: Any relevant info -- reverse proxy, self-signed certs, number of endpoints, etc.
+    validations:
+      required: false
