@@ -1,3 +1,5 @@
+<img width="128" alt="App_store_1024_1x" src="https://github.com/user-attachments/assets/bae4e3d8-7f32-423f-918f-67b83e50d100" />
+
 # Krill
 
 A native Portainer client for iOS, macOS, and Android.
