@@ -18,7 +18,6 @@ Krill gives you full control over your Portainer-managed infrastructure from you
 - **Settings** -- Configure Portainer instance settings, Kubernetes options, and session timeouts (admin)
 - **Pull to refresh** -- Native pull-to-refresh on all data screens
 - **Dark and light mode** -- Follows system appearance
-- **Self-signed certificates** -- Trust hosts with self-signed TLS certificates
 
 ## Platforms
 
