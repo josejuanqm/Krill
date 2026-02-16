@@ -11,7 +11,7 @@ Krill gives you full control over your Portainer-managed infrastructure from you
 ## Features
 
 - **Dashboard** -- Overview of environments, containers, images, volumes, and stacks at a glance
-- **Environments** -- Browse all Docker and Kubernetes endpoints with live status indicators
+- **Environments** -- Browse all Docker endpoints with live status indicators and stats
 - **Containers** -- View details, logs, stats (CPU/memory charts), environment variables, labels, mounts, and network config. Start, stop, restart, kill, or remove containers.
 - **Stacks** -- List, inspect, start, and stop Compose and Swarm stacks
 - **Multi-server** -- Add multiple Portainer instances and switch between them from the title dropdown
